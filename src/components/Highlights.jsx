@@ -4,7 +4,7 @@ import Highlight from "./ui/Highlight";
 
 const Highlights = () => {
   return (
-    <section id="hightlights">
+    <section id="highlights">
       <div className="container">
         <div className="row">
           <h2 className="section__title">
@@ -26,7 +26,6 @@ const Highlights = () => {
               title="10,000+ Books"
               para="Library has books in all your favorite categories."
             />
-            
           </div>
         </div>
       </div>
