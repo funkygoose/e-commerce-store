@@ -1,7 +1,7 @@
-import React from "react";
-import { books } from "../data";
+import React, { useState } from "react";
 import Book from "../components/ui/Book";
-const Books = () => {
+const Books = ({ books: initialBooks }) => {
+    const [books, setBooks] = useState(initialBooks);
   return (
     <div id="books__main">
       <section>
