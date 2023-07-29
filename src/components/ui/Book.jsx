@@ -13,15 +13,13 @@ const Book = ({ book }) => {
     image.src = book.url;
     image.onload = () => {
       setTimeout(() => {
-        if (mountedRef.current) {
-          setImg(image);
-        }
+        setImg(image);
       }, 300);
     };
     return () => {
       //when the component unmounts
       mountedRef.current = false;
-    }
+    };
   });
 
   return (
